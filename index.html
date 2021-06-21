@@ -1,0 +1,92 @@
+<html>
+    <head>
+       <title>My Selfie App</title>
+ <!--<script type="text/javascript" src="webcamjs/webcam.min.js"></script>-->
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous"></script>
+
+
+<link href="style.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js" integrity="sha512-dQIiHSl2hr3NWKKLycPndtpbh5iaHLo6MwrXm7F0FM5e+kL2U16oE9uIwPHUl6fQBeCthiEuV/rzP3MiAB8Vfw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" integrity="sha512-AQMSn1qO6KN85GOfvH6BWJk46LhlvepblftLHzAv1cdIyTWPBKHX+r+NOXVVw6+XQpeW4LJk/GTmoP48FLvblQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+ 
+<body>
+    <div class="container">
+    <center>
+        
+        <h1>Voice Selfie App 
+            <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/27376/kamera-clipart-md.png" width="200px">
+        </h1>
+        <hr>
+        <center>
+        <h4 style="color:red;">Please press allow as soon as popup comes. After you give a voice command</h4>
+        
+        <div class="form-group">
+            <h3>Say "take my selfie"</h3>
+            <label>Your voice output : </label>
+            <textarea class="form-control col-lg-4" readonly="true" id="textbox">Voice Command</textarea>
+
+        </div>
+        <button onclick="start()">Start</button><br>
+        Press the Start button
+       
+        <label>Your webcam : </label>
+        <div id="webcam" ></div>
+        <br>
+        
+        <label>Your selife Will Display Here: </label>
+        <div id="result"></div>
+
+    </center>
+    </div id="linkee">
+    <div>
+    <a href="" id="link" download="myselfie.jpeg" hidden>Download img</a>
+    <div>
+    </center>
+    <button type="button" class="btn" data-toggle="modal" data-target="#myModal"><i class="fas fa-cog" onclick></i> </button>
+      <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Settings</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+            <p>Selfie Countdown Time</p>
+          <input placeholder="seconds" onkeyup="blah(this.value)"><br>
+           <!--<p>Immediate Download</p>
+           <input type="radio"  value="Yes"> 
+           
+           <input type="radio" value="No">-->
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+

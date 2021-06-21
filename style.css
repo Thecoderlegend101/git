@@ -1,0 +1,26 @@
+button
+{
+    width: 10%;
+    background-color:rgb(255, 214, 117);
+    border-radius: 7px;
+    font-weight: bold;
+    height: 40px;
+} 
+#webcam
+{
+    width: 300px;
+    height: 300px;
+    /*border:10px solid black;*/
+}
+textarea {
+    text-align: center;
+}
+#linkee {
+    background-color: rgb(255, 203, 203);
+}
+.btn {
+    position: fixed;
+    right:0;
+    bottom: 100;
+    size: 100px;
+}
